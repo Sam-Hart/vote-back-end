@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node ./node_modules/babel-cli/bin/babel-node index.js",
     "test": "node ./node_modules/mocha/bin/mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive",
     "test:wat:ch": "npm test -- --watch"
   },
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "immutable": "^3.8.2",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "socket.io": "^2.1.0"
   }
 }
